@@ -11,7 +11,7 @@ jobs:
       - name: Conectar al VPS y actualizar Docker
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.IP_VPS }}
+          host: 51.210.176.172
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
