@@ -1,0 +1,17 @@
+{
+  "name": "Entorno DevSecOps eduaibar",
+  "image": "mcr.microsoft.com/devcontainers/base:debian",
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "ms-vscode-remote.remote-ssh",
+        "tamasfe.even-better-toml",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+
+  "postCreateCommand": "echo 'Entorno configurado siguiendo el anexo de S&S' > welcome.txt"
+}
